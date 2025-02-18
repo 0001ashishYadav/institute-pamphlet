@@ -176,6 +176,7 @@
   .testimonial blockquote {
     font-style: italic;
     line-height: 1.6;
+    font-size: 2rem;
   }
   
   /* Why Choose Us */
@@ -269,6 +270,10 @@
   
     .features {
       grid-template-columns: 1fr;
+    }
+
+    .testimonial blockquote {
+      font-size: 1rem;
     }
   
     footer {
