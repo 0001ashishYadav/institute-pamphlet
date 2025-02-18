@@ -1,0 +1,285 @@
+:root {
+    --color-primary: #00a896;
+    --color-secondary: #005f73;
+    --color-accent: #94d2bd;
+    --color-text: #001219;
+    --color-background: #ffffff;
+    --color-gray: #6b7280;
+    --border-radius: 12px;
+    --wave-height: 120px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .pamphlet {
+    background-color: var(--color-background);
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+                0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    position: relative;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: var(--color-background);
+    padding: 1.5rem;
+    position: relative;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-primary);
+  }
+
+  .logo-section img {
+    height: 30px;
+  }
+  
+  .logo-section svg {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .logo-section p {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+ 
+  
+  /* Hero Image */
+  .hero-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* .hero-image::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--wave-height);
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M321.39 56.44c58-10.79 114.16-30.13 172-41.86 82.39-16.72 168.19-17.73 250.45-.39C823.78 31 906.67 72 985.66 92.83c70.05 18.48 146.53 26.09 214.34 3V0H0v27.35a600.21 600.21 0 00321.39 29.09z' fill='%23ffffff'/%3E%3C/svg%3E") no-repeat;
+    background-size: cover;
+  } */
+  
+  /* Main Content */
+  main {
+    padding: 2rem;
+    position: relative;
+    margin-top: -60px;
+  }
+  
+  .institution-section {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .institution-section span {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+
+  }
+  
+  
+  .institution-section h1 {
+    color: var(--color-secondary);
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .institution-section .tagline {
+    font-style: italic;
+    color: var(--color-gray);
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+
+  .spl-sec {
+    height: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: auto;
+    box-shadow: 0px 0px 5px var(--color-accent);
+   
+  }
+
+  .cources {
+    color: var(--color-secondary);
+  }
+
+  
+  
+  /* Features */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+  }
+  
+  .feature {
+    /* border-radius: 2rem; */
+    box-shadow:inset 0px 0px 8px var(--color-primary);
+    padding: 2rem;
+   
+  }
+
+  .feature h3 {
+    color: var(--color-secondary);
+    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Testimonial */
+  .testimonial {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    margin: 3rem 0;
+  }
+  
+  .testimonial blockquote {
+    font-style: italic;
+    line-height: 1.6;
+  }
+  
+  /* Why Choose Us */
+  .why-choose-us {
+    margin: 3rem 0;
+  }
+  
+  .why-choose-us h2 {
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .benefits {
+    list-style: none;
+  }
+  
+  .benefits li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-gray);
+  }
+  
+  .benefits li svg {
+    color: var(--color-primary);
+    flex-shrink: 0;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .contact {
+    flex: 1;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-primary);
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-details {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+  }
+  
+  .contact-details p {
+    margin-bottom: 0.5rem;
+  }
+  
+  .qr-code {
+    width: 80px;
+    height: 80px;
+    background-color: #eee;
+    border-radius: 8px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body {
+      padding: 1rem;
+    }
+  
+    .pamphlet {
+      border-radius: var(--border-radius);
+    }
+  
+    main {
+      padding: 1.5rem;
+    }
+
+    .spl-sec{
+      height: 100px;
+      width: 90%;
+      flex-direction: column;
+    }
+  
+    .features {
+      grid-template-columns: 1fr;
+    }
+  
+    footer {
+      flex-direction: column;
+      gap: 2rem;
+      align-items: center;
+    }
+  
+    .contact {
+      text-align: center;
+    }
+  
+    .contact-item {
+      justify-content: center;
+    }
+  }
