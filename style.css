@@ -139,6 +139,8 @@
 
   .cources {
     color: var(--color-secondary);
+   border-bottom: 1px solid var(--color-secondary) ;
+    padding-bottom: 0.8rem;
   }
 
   
