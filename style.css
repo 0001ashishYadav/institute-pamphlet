@@ -238,11 +238,13 @@
     margin-bottom: 0.5rem;
   }
   
-  .qr-code {
+  .location {
     width: 80px;
     height: 80px;
     background-color: #eee;
     border-radius: 8px;
+    border-radius: 0.8rem;
+    overflow: hidden;
   }
   
   /* Responsive Design */
